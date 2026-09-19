@@ -1,6 +1,6 @@
 {
   "name": "erihub",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Erihub — a CSS + vanilla JS UI framework connecting Eritrean talent worldwide. Bootstrap-equivalent component set with a distinct forest-green, gold, and blue brand identity.",
   "main": "dist/erihub.js",
   "style": "dist/erihub.css",
