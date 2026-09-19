@@ -1,0 +1,36 @@
+{
+  "name": "erihub",
+  "version": "0.2.0",
+  "description": "Erihub — a CSS + vanilla JS UI framework connecting Eritrean talent worldwide. Bootstrap-equivalent component set with a distinct forest-green, gold, and blue brand identity.",
+  "main": "dist/erihub.js",
+  "style": "dist/erihub.css",
+  "unpkg": "dist/erihub.min.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "css-framework",
+    "ui-kit",
+    "erihub",
+    "bootstrap-alternative",
+    "design-system",
+    "components"
+  ],
+  "author": "Mussa Mohammed Idris -Erihub Initiative",
+  "license": "MIT",
+  "homepage": "./demo/index.html",
+  "repository": {
+    "type": "git",
+    "url": "REPLACE_WITH_YOUR_GIT_URL"
+  },
+
+  "scripts": {
+    "build:css": "cat src/css/erihub-core.css src/css/erihub-components.css > dist/erihub.css && cleancss -o dist/erihub.min.css dist/erihub.css",
+    "build:js": "cp src/js/erihub.js dist/erihub.js && terser dist/erihub.js -o dist/erihub.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js"
+  }
+}
